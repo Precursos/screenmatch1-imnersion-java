@@ -1,46 +1,33 @@
-import java.util.Scanner;
+import modelo.Pelicula;
+import modelo.Serie;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
 
-        int fechaDeLanzamiento = 1997;
-        double evaluacion = 4.5;
-        boolean incluidoEnElPlanBase = true;
-        String nombre = "Matrix";
-        String sinopsis = """
-               La mejor pelicula del fin del milenio
-               NO MAMES
-               NO SABIA QUE SE PODIA HACER
-               ESTOOOOOOOO
-               """;
-        double mediaEvaluacionUsuario = 0;
+        Principal principal = new Principal();
+        principal.muestraElMenu();
 
-        System.out.println("Pelicula: " + nombre);
-        System.out.println(fechaDeLanzamiento);
-        System.out.println(evaluacion);
-        System.out.println(incluidoEnElPlanBase);
-
-        double mediaEvaluacion = (4.5 + 4.8 + 3) / 3;
-        System.out.println("Media de la evaluacion: " + mediaEvaluacion);
-
-        if (fechaDeLanzamiento <= 2023){
-            System.out.println("pelicula popular en el momento");
-        } else {
-            System.out.println("Pelicula retro que vale la pena ver");
-        }
-
-        int i = 0;
-        while (i < 3) {
-            Scanner teclado = new Scanner(System.in);
-            System.out.println("Ingresa la nota que le darías a Matrix:");
-            double notaMatrix = teclado.nextDouble();
-            mediaEvaluacionUsuario = mediaEvaluacionUsuario + notaMatrix;
-            i++;
-        }
-
-        System.out.println("La media de la pelicula es: " + mediaEvaluacion / 3);
+//        Pelicula matrix = new Pelicula();
+//        matrix.setNombre("Matrix");
+//        matrix.setTiempoDuracionMinutos(120);
+//        matrix.setFechaDeLanzamiento(1999);
+//        matrix.fichaTecnica();
+//
+//
+//        Pelicula encanto = new Pelicula();
+//        encanto.setNombre("Encanto");
+//        encanto.setTiempoDuracionMinutos(120);
+//        encanto.setFechaDeLanzamiento(2022);
+//        encanto.fichaTecnica();
+//
+//        Serie friends = new Serie();
+//        friends.setNombre("Friends");
+//        friends.setFechaDeLanzamiento(1996);
+//        friends.setTemporadas(10);
+//        friends.setEpisodiosPorTemporadas(22);
+//        friends.setDuracionMinutosEpisodio(30);
+//        friends.fichaTecnica();
 
         }
+
 }
